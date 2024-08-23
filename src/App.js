@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import ClippedDrawer from "./pages/Navbar.jsx"; // Import the dashboard component  
+import { Login } from "./pages/Login.jsx"; // Import the login component  
+import Singup from "./pages/Signup.jsx"; // Import the signup component (note: should be renamed to "Signup" for consistency)  
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import necessary components from react-router-dom  
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+function App() {  
+  return (  
+    <Router>  
+      <Routes>  
+        {/* Default route which renders the Login component */}  
+        <Route path="" element={<Login />} />  
+        {/* Route for the Signup component */}  
+        <Route path="/signup" element={<Singup />} />  
+        {/* Route for the Dashboard, which uses ClippedDrawer as the main component */}  
+        <Route path="/dashbord" element={<ClippedDrawer />} />  
+      </Routes>  
+    </Router>  
+  );  
+}  
 
-export default App;
+export default App; // Export the App component
