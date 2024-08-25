@@ -19,7 +19,7 @@ export const Login = () => {
       console.log(response.data); // Log the response from the server  
       const token = response.data.jwt; // Retrieve the JWT token from response  
       localStorage.setItem("token", token); // Store token in local storage  
-      navigate("/dashbord"); // Navigate to the dashboard  
+      navigate("/dashboard"); // Navigate to the dashboard  
     } catch (error) {  
       console.log(error.response.data.message); // Log any error messages  
       alert(error.response.data.message); // Alert the user with error message  
