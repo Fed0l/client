@@ -80,8 +80,7 @@ const TaskList = () => {
 
   return (
     <Box component="main" sx={{ flexGrow: 1, p: 2, width: "100%", height:'100vh' }}>
-      <Toolbar />
-
+      
       <h1 className=" text-center text-6xl font-Amsterdam">Task List</h1>
       <BasicSelect className=" my-2" tasks={sortedTasks} onSort={handleSort} />
       <Typography
@@ -100,7 +99,6 @@ const TaskList = () => {
               id={task.id}
               title={task.title}
               description={task.description}
-              // dueDate={task.duedate.split("T")[0]}
               dueDate={task.duedate}
               is_completed={task.is_completed}
               onDelete={handleDelete}
@@ -180,7 +178,6 @@ export default function ClippedDrawer() {
               </ListItemIcon>
               Create New Task
             </ListItemButton>
-            {/* <Divider /> */}
           </List>
         </Box>
       </Drawer>
