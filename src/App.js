@@ -12,7 +12,7 @@ function App() {
         {/* Route for the Signup component */}  
         <Route path="/signup" element={<Singup />} />  
         {/* Route for the Dashboard, which uses ClippedDrawer as the main component */}  
-        <Route path="/dashbord" element={<ClippedDrawer />} />  
+        <Route path="/dashboard" element={<ClippedDrawer />} />  
       </Routes>  
     </Router>  
   );  
