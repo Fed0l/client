@@ -80,7 +80,6 @@ const TaskList = () => {
 
   return (
     <Box component="main" sx={{ flexGrow: 1, p: 2, width: "100%", height:'100vh' }}>
-      <Toolbar />
 
       <h1 className=" text-center text-6xl font-Amsterdam">Task List</h1>
       <BasicSelect className=" my-2" tasks={sortedTasks} onSort={handleSort} />
