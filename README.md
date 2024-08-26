@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# TODO Website Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The frontend of the TODO website project is built using React and provides a user interface for managing to-do lists. It includes features for user authentication, task management, and a responsive design built with Tailwind CSS. This project interacts with the backend API to handle user data and tasks securely.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Material-UI**: Component library for React, including icons and styling.
+- **Axios**: HTTP client for making API requests.
+- **React Router**: Library for routing and navigation in React applications.
+- **Day.js**: Library for date manipulation.
+- **dotenv**: Module for environment variables management.
+- **JWT-decode**: Library for decoding JSON Web Tokens.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the Repository**
 
-### `npm test`
+   ```bash
+   git clone https://github.com/Fed0l/client
+   cd client
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install Dependencies**
 
-### `npm run build`
+   Ensure you have Node.js installed. Run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Setup Environment Variables**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Copy the `.env.sample` file to a new file named `.env` and configure the `REACT_BASE_URL` with your backend URL:
 
-### `npm run eject`
+   ```plaintext
+   REACT_BASEURL_URL=http://localhost:3001
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Start the Development Server**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   To run the development server and see the frontend in action, use:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+   The application will be accessible at `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Build for Production**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   To build the application for production, use:
 
-### Code Splitting
+   ```bash
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   The production build will be located in the `build` directory.
 
-### Analyzing the Bundle Size
+## Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **API Base URL**: Set the `REACT_BASEURL_URL` in the `.env` file to point to your backend API.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Contributions are welcome! Please follow these guidelines:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Fork the repository and create a new branch for your changes.
+- Ensure your code adheres to the existing style and passes all tests.
+- Submit a pull request with a clear description of your changes.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the [MIT License](LICENSE).
 
-### `npm run build` fails to minify
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For questions or support, please contact [mohseni.fedros@gmail.com](mailto:mohseni.fedros@gmail.com).
+
